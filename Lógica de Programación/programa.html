@@ -1,0 +1,113 @@
+<meta charset="UTF8">
+
+Estoy definiendo la edad de Sebastian en HTML
+<br>
+<br>
+<hr>
+
+<script>
+
+	document.write("Utilizando JavaScripts <br>")
+	document.write("La edad de Sebastian es ...")
+	document.write("<br>")
+	document.write("? <br>")	
+
+	//CONCATENANDO CARACTERES
+
+	document.write("33" + "4 <br>") // Como los números son tipo String esta "CONCATENANDO", es decir, esta juntando o uniendolas 
+	document.write("20" + 15) // Aquí tenemos String y un Number, y en este caso toma el number (asume) como string y lo "CONCATENA"
+	document.write("<br>");
+	document.write(33+4);
+	document.write("<br>");
+	document.write("<br>");
+	document.write("Las sumas de las edades de Juan, Pedro y Pablo es: " + (20+25+15) + "<br>"); //Muestra el texto y realiza la suma
+	document.write("Las sumas de las edades de Juan, Pedro y Pablo es: " + 20+25+15); //Concatena 
+	document.write("<br>");
+	document.write("<br>");
+	document.write("El año de nacimiento de Juan es: <br>" + (2022 - 20));
+	document.write("<br>");
+	document.write("<br>");
+	document.write("<h3>El año de nacimiento de Pedro es: </h3>");
+	document.write(2022 - 25);
+	document.write("<br>");
+	document.write("<br>");
+	document.write("El año de nacimiento de Pablo es: ");
+	document.write("<br>");
+	document.write(2022 - 15);
+	document.write("<br>");
+	document.write("<br>");
+	//********************************************************//
+	document.write("<hr>");
+	document.write("<br>");
+	document.write("Juan tiene " + (2022-2002) + " años");
+	document.write("<br>");
+	document.write("Pedro tiene " + (2022-1997) + " años");
+	document.write("<br>");
+	document.write("Pablo tiene " + (2022-2007) + " años");
+	//*********************************************************//
+	document.write("<hr>");
+	document.write("<br>");
+	var anho = 2022;
+	document.write("Juan tiene " + (anho-2002) + " años");
+	document.write("<br>");
+	document.write("Pedro tiene " + (anho-1997) + " años");
+	document.write("<br>");
+	document.write("Pablo tiene " + (anho-2007) + " años");
+
+	//******* PROMEDIO ********//
+	document.write("<br>");
+	document.write("<br>");
+	var promedio = ((20+25+10)/3);
+	var promedio2 = ((20+25+10)/3);
+	var promedio1 = parseInt((20+25+10)/3);
+	document.write("<br>");
+	document.write("El promedio de las edades es: " + (promedio));
+	document.write("<br>");
+	document.write("El promedio de las edades es: " + Math.round(promedio) + " ,Utilizando Math.round");
+	document.write("<br>");
+	document.write("El promedio de las edades es: " + (promedio1) + " ,Utilizando parseInt en la variable");
+	document.write("<br>");
+	document.write("El promedio de las edades es: " + parseInt(promedio2) + " ,Utilizando parseInt en el renderizado");
+
+	// Math.round() se utiliza para aproximar o redondear un número
+	// parseInt() se utiliza para volver el número entero
+
+	document.write("<hr>");
+	document.write("<br>");
+	document.write("<br>");
+
+	var edadPaola = 33;
+	var edadAndrea = 34;
+	var edadNubia = 67;
+
+	var name1 = "Paola";
+	var name2 = "Andrea";
+	var name3 = "Nubia";
+
+	var promedio = ((edadPaola + edadAndrea + edadNubia)/3);
+
+	document.write("Paola tiene "+ edadPaola + " años, Andrea tiene "+ edadAndrea + " años y Nubia "+ edadNubia + " años")
+	document.write("<br>");
+	document.write("El promedio de las edades de " 
+		+ name1 + ", " 
+		+ name2 + " y " 
+		+ name3 + " es: " 
+		+ Math.round(promedio) + " ,Utilizando Math.round");
+
+	document.write("<br>");
+	document.write("<br>");
+    var EDAD1 = 10;
+    var EDAD2 = "20";
+    var EDAD3 = 12;
+    document.write("La media de las edades es <br>");
+    document.write( (EDAD1 + EDAD2 + EDAD3) / 3);
+    // (EDAD1 + EDAD2 + EDAD3) // " concatena los números así: 102012"
+    // y al dividir dicho número 102012/3, el resultado es: 34004 
+
+
+
+	//************* PopUp ******************//
+	alert("La edad de Sebastian es ...");
+	alert("?");
+
+</script>
