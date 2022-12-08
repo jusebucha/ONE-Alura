@@ -1,0 +1,57 @@
+<meta charset="UTF8">
+
+<h1> PROGRAMA JUEGO DE ADIVINACIÓN </h1>
+
+<script>
+
+	function saltarLinea(){
+
+		document.write("<br>");
+		
+	}
+
+	function saltarLinea2(){
+
+		document.write("<br>");
+		document.write("<br>");
+		
+	}
+
+	function imprimir(frase){
+
+		document.write(frase);
+		saltarLinea2();
+	
+	}
+
+	function sorteo (n){
+
+		return Math.round(Math.random()*n);
+
+	}
+
+	//var numeroPensado = Math.round(Math.random()*10);
+	var numeroPensado = sorteo(10);
+	var numeroLanzado = parseInt(prompt("Ingrese un número entre cero y diez"));
+
+	if (numeroPensado == numeroLanzado){
+
+		imprimir("Usted acertó");
+	} 
+
+	else{
+
+		imprimir("Usted erró, el número pensado era " + numeroPensado);
+	}
+
+	
+	/*
+	//***************************************************************************
+	if(contrasenha == "micontrasenha123") {
+    alert("Acceso liberado!");
+	} else {
+    alert("Acceso negado!");
+	}
+	*/
+
+</script>

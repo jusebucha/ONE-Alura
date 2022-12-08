@@ -1,0 +1,63 @@
+<meta charset="UTF8">
+
+<h1> CALCULO IMC 1 </h1>
+
+<script>
+
+	function saltarLinea(){
+
+		document.write("<br>");
+		
+	}
+
+	function saltarLinea2(){
+
+		document.write("<br>");
+		document.write("<br>");
+		
+	}
+
+	function imprimir(frase){
+
+		document.write(frase);
+		saltarLinea2();
+	
+	}
+
+	function calcularImc(peso,altura){
+
+		imc = peso/(altura*altura);
+		imprimir ("El IMC de " + nombre + " es : " + imc);
+		return imc;
+
+	}
+
+	var nombre = prompt("ingrese su nombre");
+	var peso = prompt(nombre + ", informe su peso");
+	var altura = prompt(nombre + ",Informe su altura");
+
+	imcCalculado = calcularImc(peso, altura, nombre);
+
+	if (imcCalculado < 18.5){
+		imprimir("IMC abajo de lo recomendado");
+	}
+
+	if (imcCalculado >= 18.5 ){
+		if (imcCalculado < 25 ){
+			imprimir("IMC dentro del rango normal");
+		}
+	}
+	
+
+	if (imcCalculado >= 25 ){
+		if (imcCalculado < 30 ){
+			imprimir("IMC considerado como sobrepeso");
+		}
+	}
+
+	if (imcCalculado >= 30){
+		imprimir("IMC considerado como abesidad")
+	}
+
+
+</script>

@@ -1,0 +1,88 @@
+<meta charset="UTF8">
+
+<h1> CALCULO IMC </h1>
+
+<script>
+	
+	// Estructura de una función
+
+	function function_name(argument) {
+			// body...
+		}	
+
+
+	function saltarLinea(){
+
+		document.write("<br>");
+		document.write("<br>");
+	}
+
+	function saltarLinea1(){
+
+		document.write("<br>");
+		
+	}
+
+	function imprimir(frase){
+
+		document.write(frase);
+		saltarLinea();
+	
+	}
+
+	function imprimir1(frase){
+
+		document.write(frase);
+		saltarLinea1();
+	
+	}
+
+	function calcularImc(peso,altura, nombre){
+
+		imc = peso/(altura*altura);
+		imprimir ("El IMC de " + nombre + " es : " + imc);
+		//return (imc);
+
+	}
+
+	function calcularImc1(peso,altura){
+
+		imc = peso/(altura*altura);
+		return imc;
+
+	}
+
+	function calcularImc2(peso,altura){
+ 
+		return peso/(altura*altura);
+
+	}
+
+	/*
+	sebastian = calcularImc(80, 1.75);
+	imprimir("El IMC es: " + sebastian);
+	*/
+
+	calcularImc(85, 1.80, "Sebastian");
+	calcularImc(75, 1.70, "Manuel");
+
+	var imcSebastian = calcularImc1(85, 1.80);
+	var imcJoan = calcularImc1(90, 1.90);
+
+	imprimir("El promedio del imc calculado de Sebastian y Joan es: " + (imcSebastian+imcJoan)/2);
+
+	imprimir("El promedio del imc calculado de Nubia y Paola es: " + (calcularImc2(85, 1.80) + calcularImc2(90, 1.90))/2);
+
+	//****************************************************************
+
+	document.write("<hr>")
+	imprimir1("<h3> Solicitando los datos al usuario </h3>");
+	var nombre = prompt("ingrese su nombre")
+	var peso = prompt(nombre + ", informe su peso")
+	var altura = prompt(nombre + ", Informe su altura")
+
+	calcularImc(peso, altura, nombre);
+
+
+
+</script>

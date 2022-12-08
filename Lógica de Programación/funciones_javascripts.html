@@ -1,0 +1,79 @@
+<meta charset="UTF8">
+
+<h1> Utilización de funciones </h1>
+
+<script>
+	
+	// Estructura de una función
+
+	function function_name(argument) {
+			// body...
+		}	
+
+
+	function saltarLinea(){
+
+		document.write("<br>");
+		document.write("<br>");
+	}
+
+	function imprimir(frase){
+
+		document.write(frase);
+	
+	}
+
+	function imprimir1(frase){
+
+		document.write(frase);
+		saltarLinea();
+	}
+
+	document.write("<hr>");
+	saltarLinea();
+	var anho = 2022;
+	document.write("Juan tiene " + (anho-2002) + " años");
+	saltarLinea();
+	document.write("Pedro tiene " + (anho-1997) + " años");
+	saltarLinea();
+	document.write("Pablo tiene " + (anho-2007) + " años");
+
+	// **********************************************************
+	// Utilización de la función imprimir() 
+
+	imprimir("<hr>");
+	imprimir("<h3>Utilización de la función imprimir() </h3>");
+	imprimir("Hola amigos");
+	saltarLinea();
+	imprimir("Juan tiene " + (anho-2002) + " años");
+	saltarLinea();
+	imprimir("Pedro tiene " + (anho-1997) + " años");
+	saltarLinea();
+	imprimir("Pablo tiene " + (anho-2007) + " años");
+
+	// **********************************************************
+	// Utilización de la función imprimir() e invocando dentra de ella la función saltaLinea()
+
+	imprimir("<hr>");
+	imprimir("<h3>Utilización de la función imprimir() y dentro de esta se llama la funcion saltarLinea()</h3>");
+	imprimir1("Hola amigos");
+	imprimir1("Juan tiene " + (anho-2002) + " años");
+	imprimir1("Pedro tiene " + (anho-1997) + " años");
+	imprimir1("Pablo tiene " + (anho-2007) + " años");
+
+	//************************************************************
+	
+    function mostrarAlerta(mensaje) {
+        alert("***" + mensaje + "***");
+    }
+
+    var edad1 = 10;
+    var edad2 = 20;
+    var edad3 = 30;
+    var totalEdades = edad1 + edad2 + edad3;
+    var promedioEdades = totalEdades/3;
+
+    mostrarAlerta("Total de edades es " + totalEdades);
+    mostrarAlerta("El promedio de las edades es " +  promedioEdades);
+
+</script>
